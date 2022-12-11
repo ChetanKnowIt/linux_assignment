@@ -1,0 +1,52 @@
+1. Print the present working directory.
+2. From working direcory show the contents of root directory.  
+3. Change directory to root.
+4. Change back to your home directory. Check it by running pwd command.
+5. Create two directories C and Java under your Lab directory. Create 3 files f1, f2 and f3 with extension .c in C
+     directory.  Create 2 files by name first and second  with .java extension in directory Java. Do not change your
+     work directory. Verify it using ls command.
+6. Create one more file by name prog1 under directory C.  Move all .c files from directory C  under current
+    directory.
+7. Create another directory by name temp under directory lab.
+8. Move all files from directory C and .java files in directory temp .
+9. Copy all files from dir temp , starting with name f  in another directory by name  copy_file . Create this
+     copy_file directory  under directory C. Verify using ls.
+10. Remove all .c files from your current directory. Verify using ls.
+11. Create directory by name new under directory lab.
+12. Create any file under dir new.  Verify using ls.
+13. Remove directory  new. Verify using ls.
+14. Create hard link for any file and check the effect using ls command.
+15. Create soft link for any file and check the effect using ls command.
+16. Create files hello1,hello2, hellofile under dir C. Create directory by name hellodir under dir lab.
+17. Find all the files with names starting from  hello. Note command should not display directory.
+18. Count number of entries in your current directory.
+19. Find the empty files form dir copyfile which is in dir C.
+20. Count total number of C files from copyfile  directory.
+21. Count all the directories present in current directory.
+22. Consider following data file having roll-no, name and marks.
+    5 amit 59
+    1 babita 90
+    3 chandan 89
+    4 daya 69
+    2 edwina 74
+    sort the data on column 1 , 2 and 3.
+    Store the data in different files and see the result.
+23. Create file with names of 10 countries.
+    1. try head command
+    2. try tail command
+    3. display 6th and 7th country from your file.
+24. create following data file
+
+1231  Amitabh     1000000
+2561  Priyanka     289050
+1653  ShahRukh  62645
+3823  Hritik          745218
+5183  Dipika         56123
+
+-Sort in descending order of name
+-Add 4 more entries in above file
+-Store sorted data in file by name NewActors
+-Display line numbers for file (hint nl)
+-Display first 2 lines of sorted data
+-Display last 3 lines of sorted data
+-Display line 3 4 5 of sorted data

@@ -1,0 +1,24 @@
+	1. Create a file by name fruits and add the following data in it. Perform following commands on it.
+   apple
+   apple
+   apple
+   banana
+   mango
+   mango
+   pineapple  
+   grapes
+   a.$uniq fruits.txt
+   b.$uniq -c fruits.txt
+2. Accept 2 numbers from user and print the smallest number.
+3. Accept file name from user, if file exists and file has read permission then print its contents. Else give an appropriate  message.
+4. Create following data file by name Employee. File contains id-no of a person , name and commission earned
+   1425  Ravi 15.65
+   4320  Anuja 26.27
+   6830  Sita 36.15
+   1450  Raju 21.86
+   Write a menu driven program which accepts column number from user and print the sorted data according to the column.
+5. Write a menu driven program to design a calculator to add/sub/mul/div for 2 numbers. Accept numbers  and a operator  from user.
+6. Write a shell utility to check if given string is palindrome.
+7. Write a shell utility which accepts source file or directory name and destination directory name from the user . 
+If source name is a file name, then copy the file in destination directory. 
+If source name  is directory then copy entire directory in destination directory.  

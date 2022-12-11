@@ -1,0 +1,347 @@
+1. Display only the day of system date.
+	$ date +"%A"
+===============================================================
+2. Display only the month of system date.
+	$ date +"%B"
+===============================================================	
+3. Execute the command to check hidden files.
+	$ ls -la
+===============================================================	
+4. Execute command ls -l and study it in details again.
+	ubuntu@ubuntu-VirtualBox:~$ ls -l 
+	total 36
+	drwxr-xr-x 3 ubuntu ubuntu 4096 Dec 11 09:29 Desktop
+	drwxr-xr-x 2 ubuntu ubuntu 4096 Dec 11 08:58 Documents
+	drwxr-xr-x 2 ubuntu ubuntu 4096 Dec 11 08:58 Downloads
+	drwxr-xr-x 2 ubuntu ubuntu 4096 Dec 11 08:58 Music
+	drwxr-xr-x 2 ubuntu ubuntu 4096 Dec 11 08:58 Pictures
+	drwxr-xr-x 2 ubuntu ubuntu 4096 Dec 11 08:58 Public
+	drwx------ 4 ubuntu ubuntu 4096 Dec 11 09:26 snap
+	drwxr-xr-x 2 ubuntu ubuntu 4096 Dec 11 08:58 Templates
+	drwxr-xr-x 2 ubuntu ubuntu 4096 Dec 11 08:58 Videos
+===============================================================
+5. Create file f1 of size 0 bytes.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ touch f1
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ls -l
+	total 4
+	-rw-rw-r-- 1 ubuntu ubuntu    0 Dec 11 09:43 f1
+===============================================================
+6. Create file f11 f12 f13 of size 0 bytes using single command.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ touch f11 f12 f13
+===============================================================
+7. List all the files in your current directory.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ls -l
+	total 4
+	-rw-rw-r-- 1 ubuntu ubuntu    0 Dec 11 09:43 f1
+	-rw-rw-r-- 1 ubuntu ubuntu    0 Dec 11 09:44 f11
+	-rw-rw-r-- 1 ubuntu ubuntu    0 Dec 11 09:44 f12
+	-rw-rw-r-- 1 ubuntu ubuntu    0 Dec 11 09:44 f13
+	drwxrwxr-x 3 ubuntu ubuntu 4096 Dec 11 09:43 linux
+===============================================================
+8. Create file Country and store names of 5 countries.Use cat command.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat > Country
+	India
+	Bangladesh
+	Sri Lanka
+	Nepal
+	Bhutan
+	cntrl+D
+===============================================================
+9. Display contents of file Country.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat Country
+	India
+	Bangladesh
+	Sri Lanka
+	Nepal
+	Bhutan
+===============================================================
+10. Create another file by name MoreCountries and store 5 more country names.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat > MoreCoutries
+	USA
+	UK
+	Germany
+	France
+	Scotland
+	Ireland
+	Hungary  
+	Poland
+	Romania
+	Russia
+	China
+	Japan
+	Korea
+===============================================================
+11. Display contents of MoreCountries.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat MoreCoutries 
+	USA
+	UK
+	Germany
+	France
+	Scotland
+	Ireland
+	Hungary
+	Poland
+	Romania
+	Russia
+	China
+	Japan
+	Korea
+===============================================================
+12. Copy contents of file Country in another file by name NewCountry.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cp Country NewCountry 
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat NewCountry 
+	India
+	Bangladesh
+	Sri Lanka
+	Nepal
+	Bhutan
+===============================================================
+13. See directory listing and check all file names you have created.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ls
+	Country  f1  f11  f12  f13  linux  MoreCoutries  NewCountry
+===============================================================
+14. Rename file Country to NewCountry and check in directory listing if file
+    by name Country exsists.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ mv Country NewCountry
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ls
+	f1  f11  f12  f13  linux  MoreCoutries  NewCountry    
+===============================================================
+15. Move contents of file MoreCountries in MoreCountries1. Check directory
+    listing.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ mv MoreCoutries MoreCountries1
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ls
+	f1  f11  f12  f13  linux  MoreCountries1  NewCountry
+===============================================================
+16. Delete file f12.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ls
+	f1  f11  f12  f13  linux  MoreCountries1  NewCountry
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ rm f12
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ls
+	f1  f11  f13  linux  MoreCountries1  NewCountry
+===============================================================
+17. Delete file f11 and f13 using single command.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ls
+	f1  f11  f13  linux  MoreCountries1  NewCountry
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ rm f11 f13
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ls
+	f1  linux  MoreCountries1  NewCountry
+===============================================================
+18. Clear the screen.
+	$ clear
+===============================================================
+19. Try cal command with all options.
+	$ sudo apt install ncal
+then you can try ncal 
+
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ncal
+	    December 2022     
+	Su     4 11 18 25   
+	Mo     5 12 19 26   
+	Tu     6 13 20 27   
+	We     7 14 21 28   
+	Th  1  8 15 22 29   
+	Fr  2  9 16 23 30   
+	Sa  3 10 17 24 31   
+
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ncal 8 2022
+	    August 2022       
+	Su     7 14 21 28   
+	Mo  1  8 15 22 29   
+	Tu  2  9 16 23 30   
+	We  3 10 17 24 31   
+	Th  4 11 18 25      
+	Fr  5 12 19 26      
+	Sa  6 13 20 27 
+===============================================================
+20. Try date command with all options.
+
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%a
+	Sun
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%A
+	Sunday
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%b
+	Dec
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%B
+	December
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%C
+	20
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%c
+	Sunday 11 December 2022 10:47:17 AM
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%d
+	11
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%D
+	12/11/22
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%l
+	10
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%M
+	48
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%X
+	10:49:45 AM IST
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%x
+	11/12/22
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%X
+	10:49:45 AM IST
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ date +%x
+	11/12/22
+===============================================================
+21. Display contents of both the files NewCountry and MoreCountries1 using single command.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat MoreCountries1 MoreCoutries
+	USA
+	UK
+	Germany
+	France
+	Scotland
+	Ireland
+	Hungary
+	Poland
+	Romania
+	Russia
+	China
+	Japan
+	Korea
+	USA
+	UK
+	Germany
+	France
+	Scotland
+	Ireland
+	Hungary
+	Poland
+	Romania
+	Russia
+	China
+	Japan
+	Korea
+===============================================================
+22. Add 2 more country names in file NewCountry.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat > NewCountry 
+	Australia 
+	New Zealand
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat NewCountry 
+	Australia 
+	New Zealand
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat >> NewCountry
+	India
+	Bangladesh
+	Sri Lanka
+	Nepal
+	Bhutan
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat NewCountry 
+	Australia 
+	New Zealand
+	India
+	Bangladesh
+	Sri Lanka
+	Nepal
+	Bhutan
+===============================================================
+23. Copy contents of file NewCountry at the end of MoreCountries1.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat NewCountry >> MoreCountries1 
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat MoreCountries1
+	USA
+	UK
+	Germany
+	France
+	Scotland
+	Ireland
+	Hungary
+	Poland
+	Romania
+	Russia
+	China
+	Japan
+	Korea
+	Australia 
+	New Zealand
+	India
+	Bangladesh
+	Sri Lanka
+	Nepal
+	Bhutan
+===============================================================
+24. Execute command whoami.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ whoami
+	ubuntu
+25. Execute man command for ls.
+	$man ls
+26. Create directory CDAC.
+27. Change directory to CDAC.
+28. Execute command pwd and see the path.
+29. Create files Trainers, Students and Admin with some meaningful entries
+    under directory CDAC.
+30. Check directory listing.
+31. Change your directory one level back.
+32. Check output of pwd and ls commands.
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ mkdir CDAC
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cd CDAC/
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment/CDAC$ pwd
+	/home/ubuntu/Desktop/linuxAssignment/CDAC
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment/CDAC$ touch Trainers Students Admins
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment/CDAC$ cat > Trainers
+	teacher1
+	techer1
+	teacher2
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment/CDAC$ cat Trainers 
+	teacher1
+	techer1
+	teacher2
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment/CDAC$ cat > Students
+	stu1
+	stu2
+	stu3
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment/CDAC$ cat > Admins 
+	A1
+	A2
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment/CDAC$ cat Students 
+	stu1
+	stu2
+	stu3
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment/CDAC$ cat Admins 
+	A1
+	A2
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment/CDAC$ pwd
+	/home/ubuntu/Desktop/linuxAssignment/CDAC
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment/CDAC$ ls
+	Admins  Students  Trainers
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment/CDAC$ cd ..
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ls
+	CDAC  f1  linux  MoreCountries1  MoreCoutries  NewCountry
+===============================================================
+31. Create 2 directories eDAC and eDBDA under directory CDAC.
+
+
+32. Using relative path create file DAC-Subject with names of 3 subjects and
+    file DBDA-Subject with names of 3 subjects under directories eDAC and 
+    eDBDA respectively.
+ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ls CDAC/
+	Admins  eDAC  eDBDA  Students  Trainers
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ touch CDAC/eDAC/DAC-Subject
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ touch CDAC/eDBDA/DBDA-Subject
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ 
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ ls CDAC/eDBDA/DBDA-Subject
+	CDAC/eDBDA/DBDA-Subject
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat >> CDAC/eDBDA/DBDA-Subject
+	DBT
+	Cloud
+	PML
+	BDT
+	Java
+	Python
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat CDAC/eDBDA/DBDA-Subject
+	DBT
+	Cloud
+	PML
+	BDT
+	Java
+	Python
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat >> CDAC/eDAC/DAC-Subject
+	Advanced Java
+	Data Structures
+	Database 
+	React
+	ubuntu@ubuntu-VirtualBox:~/Desktop/linuxAssignment$ cat CDAC/eDAC/DAC-Subject
+	Advanced Java
+	Data Structures
+	Database 
+	React
+    

@@ -1,0 +1,24 @@
+1. Using positional parameter display contents of file. File name is given as command line argument.
+     Script should give proper message to user if arguments are not passed correctly.
+2. Write a script to copy the contents of file1 to file2 using positional parameters. Script should give
+     proper  message to user if arguments are  not passed correctly.
+3. Write a script to copy contents of 2 files in one file and see the result using cat. Use positional
+     parameters. Script should give proper message to user if arguments are  not passed correctly.
+4. Write a shell utility to copy top n lines from a file into fileCopy.txt file. Pass number of lines and file
+     name as command line arguments. Script should give proper message to user if arguments are  not
+     passed correctly.
+5. Write a utility to check if the string is a Palindrom. Pass a string using command line arguments.
+6.  Write a utility which accepts any file/directory name as command line argument.  Utility should 
+     give proper message if argument passed is a file. If argument is a directory, utility should print
+     total  number of files in the directory. Proper msg shoulg be given for incorrect arguments.
+7. Write a utility to check if the number passed as command line argument is a perfect number.
+8. Write  a utility to add all the numbers passed through command line. Also print the count of
+     numbers.
+9. Write a utility which will copy all empty files from current directory to the directory by name
+    EmptyDir. Create directory EmptyDir.
+10. Try out following tar command . Create necessary files/directories if required.
+       tar cvf file.tar *.c    
+       tar xvf file.tar    
+ 11. Try out following zip command . Create necessary files/directories if required.
+        $zip myfile.zip filename.txt
+        $unzip myfile.zip

@@ -1,0 +1,19 @@
+1. Write a utility to accept any number from user and print it's table.
+2. Write a utility to print numbers 15 to 20 using for loop.
+3. Write a utility to print numbers from 1 to 5 using until loop.
+4. Write a utility to print first 10 odd numbers using until loop.
+5. Accept the number from user and if the number is positive find the factorial. Give proper message.
+    Write a shell utility for above problem.
+6. Write a utility to accept 2 numbers, m and n  from user. Utility should print all even nos starting from
+    m till n. Also it should print the count of numbers.
+    e.g 
+    i/p : 
+	m=5 n=15
+    0/p : 
+	even nos : 6 8 10 12 14
+	count : 5
+7. Write a utility to accept number from user and check if it is prime.
+8. Write a utility to delete all empty files from your directory.
+9. Write a utility to move all the files of size more than 0 bytes to another directory. Make sure that 
+    directory is already existing.
+10. Accept a number n from the user. Write a utility to print n odd numbers and print.

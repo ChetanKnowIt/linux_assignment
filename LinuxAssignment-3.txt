@@ -1,0 +1,16 @@
+1. Create a file by name file100 and file111  in the current directory, change the permission for file to following
+      a. rwx for user rw for group r for others.
+      b. rw for user r for group and others.
+      c. rwx for all
+      d. rwx for user r for group and other
+      e. rw for user rw for group and r for other
+      Grant above permissions using  symbols to file100 and permissions using numeric values to file111.
+2.  Write a shell script to display the contents of file MoreCountries1.
+3.  Accept name of a file from user and display the contents of file.
+4.  Write a shell script to copy contents of one file into another. Accept file name  from user.
+5.  Write a shell utility which will print top 10 cpu consuming processes.
+6.  Write a shell utility to print top 10 memory consuming processes.
+7.  Write a shell utility to copy top n lines from a file into fileCopy.txt file. Accept number of lines and
+      filename  from user.
+8. Write a shell utility to  Count number of files and directories in your current directory.
+9. Write a shell utility to print count of files of given extension. Accept extension from user.

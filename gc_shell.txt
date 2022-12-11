@@ -1,0 +1,9 @@
+'dpkg-reconfigure tzdata' - to setup timezone on google cloud shell 
+
+ 
+timedatectl list-timezones | grep -i tokyo
+
+ timedatectl list-timezones | grep -i delhi
+
+
+sudo timedatectl set-timezone Asia/Kolkata
