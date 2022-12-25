@@ -17,3 +17,7 @@
 9. Write a utility to move all the files of size more than 0 bytes to another directory. Make sure that 
     directory is already existing.
 10. Accept a number n from the user. Write a utility to print n odd numbers and print.
+
+
+find . -name '*.*' ! -empty -type f -exec cp -vv {} /$(pwd) \;
+find . -name '*.*' ! -empty -type f -exec cp -vv {} otherdir/ \;
