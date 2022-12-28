@@ -1,0 +1,14 @@
+echo "Which color do you like best?"
+echo "1 - Roll no"
+echo "2 - name"
+echo "3 - marks"
+read color;
+case $color in
+  1) sort StudentData.txt;;
+  2) sort -k 2,2 StudentData.txt;;
+  3) sort -k 2,3 StudentData.txt;;
+  *) echo "Try again?";; 
+esac
+
+
+grep "Jai Hind" IndianHistory.txt
