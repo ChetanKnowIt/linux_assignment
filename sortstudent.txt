@@ -5,8 +5,8 @@ echo "3 - marks"
 read color;
 case $color in
   1) sort StudentData.txt;;
-  2) sort -k 2,2 StudentData.txt;;
-  3) sort -k 2,3 StudentData.txt;;
+  2) sort -k2 StudentData.txt;;
+  3) sort -n -k3 StudentData.txt;;
   *) echo "Try again?";; 
 esac
 
