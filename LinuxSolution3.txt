@@ -1,0 +1,60 @@
+1. $touch file100 file111
+   permissions using symbols
+   $chmod u+rwx,g+rw,o+r
+   $chmod u+rw,go+r 
+   $chmod ugo+rwx 
+   $chmod u+rwx,g+r,o+r
+   $chmod u+rw,g+rw,o+r
+
+   permissions using numeric values
+   $chmod 761 file111
+   $chmod 611 file111
+   $chmod 777 file111
+   $chmod 661 file111
+
+2. shell1.sh
+   ----------
+   cat MoreCountries1
+
+3. shell2.sh
+   ---------
+   echo "Enter the file name"
+   read fname
+   cat $fname
+
+4. shell3.sh
+   ---------
+   echo "Enter file name"
+   read fname
+   cp $fname tempdata
+   cat tempdata
+
+5. shell4.sh
+   ---------
+   $ps -eo ppid,pid,cmd,%cpu --sort=-%cpu | head -n 10
+
+6. shell5.sh
+   ---------
+   $ps -eo ppid,pid,cmd,%mem --sort=-%mem | head -n 10
+
+
+7. shell6.sh
+   ---------
+   echo "Enter File Name :: "
+   read fname
+   echo "No. of lines :: "
+   read no
+   cat $fname | head -n $no > newfile
+
+8. shell7.sh
+   ---------
+   echo "Number of files"
+   find . -type f | wc -l
+   echo "Number of directories"
+   find . -type d | wc -l 
+
+9. shell8.sh
+    ---------
+    echo "Enter the extenction of file"
+    read ext
+    find . -name "*.$ext" | wc -l 

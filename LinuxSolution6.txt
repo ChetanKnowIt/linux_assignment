@@ -1,0 +1,110 @@
+1. shell1.sh
+-------------
+if [ $# -eq 0 ]
+then
+  echo Arguments required
+else
+    if [ $# -gt 1 ]
+    then 
+       echo Too many arguments
+    else
+       cat $1
+    fi
+fi
+
+Note : to run the script ----
+        bash shell1.sh filename
+
+
+2. shell2.sh
+----------
+cp $1 $2
+   Note : to run the script ----
+          bash shell2.sh filename1 filename2
+          contents of filename1 will be copied to filename2
+ 
+3. shell3.sh
+----------
+cat $1 $2 >> $3
+   Note : to run the script ----
+          bash shell3.sh filename1 filename2 filename3
+          contents of filename1 and filename2 will be copied in filename3.
+
+
+4. shell4.sh
+-----------------
+echo "Enter File Name :: "
+read fname
+echo "No. of lines :: "
+read no
+cat $fname | head -n $no > newfile
+
+Note : to run the script ----
+          bash shell4.sh filename no_of_lines
+
+5. shell5.sh
+-------------
+str1=$1  
+str2=$(echo "$str1" | rev)
+if [ $str1 == $str2 ]
+then 
+   echo "Palindrom"
+else 
+   echo "Not a palindrom"
+fi
+
+6.shell6.sh
+------------
+if [ $# -eq 1 ]
+then
+  if [ -f $1 ]
+  then
+     echo "Argument passed is a file"
+  fi
+  if [ -d $1 ]
+  then
+     echo $1 is a directory
+     echo Following are the directory contents
+   find . -type f |wc -l
+  fi
+else
+  echo Wrong number of arguments
+fi
+
+7.shell7.sh
+-----------
+num=$1
+i=1
+while [ $i -lt $num ]
+do
+   p=$((num%i))
+   if [ $p -eq 0 ]
+   then
+     sum=$((sum+i))
+    fi  
+    i=$((i+1))  
+done
+if [ $sum -eq $num ]
+then
+   echo number is perfect number
+else
+   echo number is not a perfect number 
+fi  
+
+8.shell8.sh
+-----------
+i=0
+sum=0
+for i in range $*
+do
+   sum=$((sum+i)
+done
+echo sum of the arguments is $sum
+echo count of arguments is $#
+
+9.shell9.sh
+-----------
+for var in $(find . -type f -empty)
+do  
+    cp $var EmptyDir/.
+done

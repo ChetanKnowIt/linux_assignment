@@ -1,0 +1,60 @@
+1. date +%a
+   date +%A
+2. date +%b
+   date +%B
+3. ls -a
+4. ls -l
+5. touch f1
+6. touch f11 f12 f13 
+7. ls
+8. cat >country
+   India
+   Nepal
+   Bangladesh
+   ShriLanka
+   Bhutan
+   ctrl+d
+9. cat country
+10. cat > MoreCountries
+    USA
+    UK
+    Poland
+    Germany
+    Austria
+    ctrl+d
+11. cat MoreCountries
+12. cp country NewCountry
+13. ls
+14. mv country CountryList
+15. mv MoreCountries MoreCountries1
+16. rm f12
+17. rm f11 f13
+18. clear
+19. cat NewCountry MoreCountries1
+20. cat >> NewCountry
+    Pakistan
+    Afghanistan
+    ctrl+d
+21. cat NewCountry >> MoreCountries1
+22. whoami
+23. man ls
+24. mkdir CDAC
+25. cd CDAC
+26. pwd
+27. cat>Trainers
+    some entry
+    ctrl+d
+    
+    cat>Students
+    some entry
+    ctrl+d
+
+    cat>Admin
+    some entry
+    ctrl+d
+28. ls
+29. cd ..
+30. pwd
+    ls
+ 
+ 

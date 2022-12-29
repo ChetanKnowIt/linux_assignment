@@ -1,0 +1,63 @@
+1. $pwd
+2. $ls /
+3. $cd /
+4. $cd ~
+5. Considering your current dir is lab
+   $mkdir C
+   $mkdir Java
+   $cd C
+   $touch f1.c f2.c f3.c
+   $cd ..
+   $touch Java/one.java Java/two.java
+   $ls
+6. $touch prog1
+   $cp C/*.c .
+7. $mkdir temp
+8. $mv C/*.c temp/.
+   $mv Java/*.java temp/.
+9. $mkdir C/copy_file
+   $cp temp/*.* C/copy_file/*.*
+   $ls
+10.$rm *.c
+   $ls
+11.$mkdir new
+12.$touch new/file
+   $ls
+13.$rm -r new
+14.$touch try
+   $ln try hdlnk
+   $ls 
+15.$touch try1
+   $ln -s try1 swlnk
+   $ls
+16.$touch C/hello1 C/hello2 C/hellofile
+   $mkdir hellodir 
+17.$find . -type f -name "hello*"
+18.$ls | wc -l
+19.$find C/copy_file -empty
+20.$ls C/copy_file | wc -l
+21.$find . type -d | wc -l
+22.$sort -n -k1 data > one
+   $cat one
+   $sort -k2 data > two
+   $cat two
+   $sort -n -k3 data > three
+   $cat three
+23.
+   3. $head -n 7 country | tail -n 2
+24.$sort -r -k2 data > NewActors
+   $cat >> data
+   $nl data
+   $head -n 2 NewActors
+   $tail -n 3 NewActors
+   $head -n 5 data | tail -n 3
+  
+
+
+ 
+  
+
+
+
+    
+ 

@@ -1,0 +1,111 @@
+4. shell4.sh
+--------------
+echo "Enter first number"
+read n1
+echo "Enter second number"
+read n2
+if [ $n1 -lt $n2]
+then 
+   echo $n1 is smallest 
+else
+   echo $n2 is smallest
+fi
+if [ $n1 -eq $n2 ]
+then
+   echo "Numbers are equal"
+fi
+
+
+5. shell5.sh
+--------------
+echo "Enter File Name : "
+read fname
+if [ -r $fname ]
+then
+  cat $fname
+else
+  echo This is not a file....
+fi
+
+
+6. shell6.sh
+--------------
+echo "Enter file name ::"
+read fname
+echo "Enter the column number to sort data"
+echo "1:Id 2:Name 3:Amount"
+read no
+
+case $no in
+     1) sort -k 1 $fname > temp
+        cat temp
+        ;;     
+     2) sort -k 2 $fname > temp1
+        cat 
+        ;;
+     3) sort -k 3 $fname > temp2
+        cat temp2
+        ;;
+esac
+
+
+
+7. shell9.sh
+---------------
+echo "MENU"
+echo "----"
+echo "1 :: Add"
+echo "2 :: Subtract"
+echo "3 :: Multiply"
+echo "4 :: Divide"
+echo "5 :: Exit"
+echo "Enter your choice...."
+read cho
+echo "Enter first no."
+read no1
+echo "Enter second no."
+read no2
+
+case $cho in
+ 1) x = $((no1+no2))
+    echo "Sum " $x
+    ;;
+ 2) x = $((no1-no2))
+    echo "Subtraction " $x
+    ;;
+ 3) x = $((no1*no2))
+    echo "Multiplication " $x
+    ;;
+ 4) x = $((no1/no2))
+    echo "Division " $x
+    ;;
+esac
+
+
+8. shell8.sh
+--------------  
+echo "Enter the string"
+read str1;
+str2=$(echo "$str1" | rev)
+if [ $str1 == $str2 ]
+then 
+   echo "Palindrom"
+else 
+   echo "Not a palindrom"
+fi
+
+
+9. shell9.sh
+-------------
+echo "Enter file/directory name"
+read name
+echo "Enter destination"
+read dname
+if [ -f $name ]
+then
+   cp $name $dname/.
+fi
+if [ -d $name ]
+then 
+   cp $name/*.*  $dname/.
+fi
